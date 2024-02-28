@@ -1,0 +1,24 @@
+.titulo{
+    font-size: 35px;
+}
+
+.consulta label{
+    font-size: 25px;
+}
+
+.consulta input, button{
+    border-radius: 16px;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid;
+}
+
+.consulta button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    border: solid black;
+}
