@@ -1,0 +1,32 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-image: linear-gradient( to right, #192032, #0D1445, #0C1348);
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista button{
+    padding: 70px 50px 70px 50px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 40px;
+    font-size: 30px;
+    background-image: linear-gradient(to right, #555A7F, #3A406B, #252B5B);
+    color: white; 
+    margin: 70px;
+}       
+
+.lista button:hover, button:focus{
+    cursor: pointer;
+    border-color: #0077FF;
+    transform: translate(1px) scale(1.09);
+}
