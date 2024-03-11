@@ -1,41 +1,55 @@
-.cadastro{
-    display: flex;
-    justify-content: center;
+*{
     align-items: center;
-    margin-top: 150px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
 }
 
-.cadastro form{
-    padding: 20px;
-    border-top: solid black ;
-    
-}
-
-.cadastro header{
-    margin-top: 10px;
+.titulo{
+    font-size: 35px;
+    color: #0a84a9;
     margin-bottom: 30px;
-    margin-left: 170px;
-    margin-right: 170px;
-    font-size: 25px;
 }
 
-.cadastro input{
-    padding: 10px;
-    border-radius: 5px;
+.cadastro, label{
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-top: 30px;
 }
 
-.cadastro button{
-    padding: 10px 30px 10px 30px;
-    font-size: 20px;
+.cadastro, input, button{
     border-radius: 16px;
-    border: solid black;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid;
+    margin-bottom: 20px;
 }
 
-.cadastro button:hover {
-    background-color: rgb(23, 174, 23);
-    color: white;
-    border: solid black;
+.btncadastrar:hover{
     cursor: pointer;
+    background-color: #0a84a9;
+    color: white;
+    border-color: black;
+}
+
+.formExame{
+    display: none;
+}
+
+.formRemedios{
+    display: none;
+}
+
+.formCirurgias{
+    display: none;
+}
+
+.formAlergias{
+    display: none;
+}
+
+.formAlergiaM{
+    display: none;
 }

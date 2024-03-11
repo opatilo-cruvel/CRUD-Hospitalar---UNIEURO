@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro</title>
     <link rel="stylesheet" href="../css/create.css">
+    <script defer src="../js/crate.js"></script>
 
 </head>
 
@@ -17,23 +18,82 @@
             <section class="cadastro">
 
                 <form action="">
-                    <header>
+                    <header class="titulo">
                         CADASTRO
                     </header>
 
                     <label for="nome">NOME:</label><br>
-                    <input id="nome" type="text" placeholder="Digite seu nome" required><br>
+                    <input id="nome" type="text" placeholder="Nome do paciente" required><br>
 
                     <label for="CPF">CPF:</label><br>
-                    <input id="CPF" type="text" pattern="[0-9]{11}" placeholder="Digite seu CPF" required ><br>
+                    <input id="CPF" type="text" pattern="[0-9]{11}" placeholder="CPF do paciente" required ><br>
                     
                     <label for="dNascimento">DATA DE NASCIMENTO:</label><br>
                     <input type="date" required><br>
 
-                    <label for="H.exames">INSIRA SEU HISTÓRICO:</label><BR>
-                    <input id="H.exames" type="file" required><br>
+                    <Label>Fez algum exame recentemente:</Label><br>
+                    <input id="simFomularioExame" name="exame" value="exame_sim" type="radio">SIM
+                    <input id="naoFormularioExame" name="exame" value="exame_nao" type="radio">NÃO<br>
 
-                    <button type="submit">Enviar</button>
+                    <div class="formExame" id="formExame">
+                        <form>
+                            <label for="">Quais exames?</label><br>
+                            <input placeholder="Nome do exame" type="text" name="listagemExames"><br>
+                            <label for="">Data:</label><br>
+                            <input type="date">
+                        </form><br>
+                    </div>
+
+                    <Label>Toma algum remedio controlado?</Label><br>
+                    <input id="simFomularioRC" name="remedio" value="sim" type="radio">SIM
+                    <input id="naoFomularioRC" name="remedio" value="nao" type="radio">NÃO<br>
+                    
+                    <div class="formRemedios" id="formRemedios">
+                        <form>
+                            <label for="">Quais remedios?</label><br>
+                            <input placeholder="Nome do medicamento" type="text"><br>
+                            <label for="">Qual horário?</label>
+                        </form>
+                    </div>
+
+                    <label for="">Fez alguma cirurgia?</label><br>
+                    <input id="simFormularioCirurgia" name="cirurgia" value="sim" type="radio">SIM
+                    <input id="naoFomularioCirurgia" name="cirurgia" value="sim" type="radio">NÃO<br>
+
+
+                    <div class="formCirurgias" id="formCirurgias">
+                        <form>
+                            <label for="">Qual(ais) cirurgia(as)?</label><br>
+                            <input type="text"><br>
+                            <label for="">Data:</label><br>
+                            <input type="date">
+                        </form>
+                    </div>
+
+                    <label for="">Tem alguma alergia?</label><br>
+                    <input id="simFomularioAlergia" name="alergia" value="sim" type="radio">SIM
+                    <input id="naoFomularioAlergia" name="alergia" value="nao" type="radio">NÃO<br>
+
+                    <div class="formAlergias" id="formAlergias">
+                        <form>
+                            <label for="">Quais alergias?</label><br>
+                            <input type="text">
+                        </form>
+                    </div>
+
+                    <label for="">Tem alergia a algum medicamento?</label><br>
+                    <input id="simFormularioAM" name="medicamento" value="sim" type="radio">SIM
+                    <input id="naoFormularioAM" name="medicamento" value="nao" type="radio">NÃO
+
+                    <div class="formAlergiaM" id="formAlergiaM">
+                        <form >
+                            <label for="">Quais medicamento?</label><br>
+                            <input type="text">
+                        </form>
+                    </div><br>
+
+                    <button class="btncadastrar" type="submit">Cadastrar</button>
+
                 </form>
 
             </section>
